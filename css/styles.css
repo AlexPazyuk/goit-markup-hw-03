@@ -77,10 +77,13 @@ button {
 }
 
 /* Header */
+.header{
+    border-bottom: 1px solid var(--accent-color);
+}
 .header-container{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--accent-color); 
+    align-items: center;
 }
 
 .header-nav {
@@ -88,18 +91,18 @@ button {
     margin-right: auto;
 }
 .logo{
-margin-right: 124px;
 display: flex;
 align-items: center;
 padding-top: 24px;
 padding-bottom: 24px;
+margin-right: 76px
 }
 .header-nav-list{
     display: flex;
     align-items: center;
     padding-top: 24px;
         padding-bottom: 24px;
-        gap: 24px;
+        gap: 40px;
 }
 .address-list{
     display: flex;
@@ -142,16 +145,14 @@ padding-bottom: 24px;
 }
 
 /* Hero */
-.hero-container{
-    padding-top: 188px;
-    padding-bottom: 188px;
-}
 .hero{
     background-color: var(--dark-bcg);
     
     margin-left: auto;
 margin-right: auto;
 text-align: center;
+padding-top: 188px;
+    padding-bottom: 188px;
 }
 .hero-text{
 max-width: 496px;
@@ -165,7 +166,7 @@ margin-right: auto;
 margin-bottom: 48px;
 }
 .main-button{
-
+display: block;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -178,16 +179,20 @@ min-height: 56px;
 border: none;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .main-button:hover,
 .main-button:focus{
     background-color: var(--hover-color);
 }
 /* Features */
-.features-container{
-    display: flex;
+.features{
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.features-container{
+    display: flex;
     
 }
 .features-list{
@@ -217,7 +222,7 @@ letter-spacing: 0.02em
 }
 
 /* What are we doing */
-.apps-container{
+.apps{
     padding-bottom: 120px;
 }
 
@@ -232,14 +237,12 @@ gap: 24px;
 
 /* Our team */
 .team-section-title{
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 .team-cards{
 display: flex;
 flex-wrap: wrap;
 gap: 24px;
-padding-bottom: 120px;
 
 }
 
@@ -256,37 +259,40 @@ color: var(--headings-color)
 .team-card{
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-        border-radius: 0px 0px 4px 4px;
-        text-align: center;
 }
 .team-title{
-    padding-top: 32px;
+    text-align: center;
     margin-bottom: 8px;
 }
 .team-text{
     font-size: 16px;
-padding-bottom: 32px;
+text-align: center;
 }
 
 .team-section{
     background-color: var(--light-mode-bcg);
+    padding: 120px 0;
+}
+.card-wrapper{
+    padding: 32px 16px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* Portfolio */
+.portfolio-section{
+    padding: 96px 0 120px;
+}
 .portfolio-link{
         font-size: 20px;
         line-height: 1.2;
         color: var(--headings-color);
 }
-.portfolio-container{
-    padding-top: 96px;
-    padding-bottom: 120px;
-}
 .filter-list{
     display: flex;
     justify-content: center;
-    gap: 24px;
     margin-bottom: 72px;
+    padding: 12px 24px;
+    gap: 24px;
 }
 .filter{
     font-family: "Roboto", sans-serif;
@@ -299,12 +305,15 @@ padding-bottom: 32px;
         color: var(--brand-color);
         background-color: var(--light-mode-bcg);
         cursor: pointer;
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
 }
 .filter:hover,
 .filter:focus,
 .filter:active{
     color: var(--ultimate-white);
     background-color: var(--hover-color);
+    border: 1px solid transparent;
 }
 
 .portfolio-list{
@@ -340,17 +349,19 @@ padding-bottom: 32px;
 /* Footer */
 .footer-container{
     text-align: left;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .footer-bcg{
     background-color: var(--dark-bcg) ;
+    padding: 100px 0;
 }
 .text-footer{
 color: var(--light-mode-bcg);
 max-width: 264px;
     max-height: 72px;
-    margin-top: 16px;
+}
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-light{
     color: var(--light-mode-bcg);
